@@ -1,0 +1,33 @@
+*{
+            margin:0 ; 
+            padding: 0 ;
+            box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Circular');
+@font-face {
+            font-family: 'Circular';
+            src: url('path/to/fonts/circular-webfont.woff2') format('woff2'),
+                 url('path/to/fonts/circular-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+          }
+body {
+font-family: 'Circular', sans-serif;
+}
+
+$black: #191414;
+$white: #FFFFFF;
+$green: #1DB954;
+$gray: #282828;
+$dark-gray: #191414;
+
+
+
+.container{
+     min-height: calc(100vh - 70px);
+     min-width: calc(100vw - 300px);
+     position: absolute ; 
+     overflow-y: scroll;
+     bottom:70px ; 
+     left: 300px;
+}

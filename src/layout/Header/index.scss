@@ -1,0 +1,126 @@
+$black: #191414;
+$white: #FFFFFF;
+$green: #1DB954;
+$gray: #282828;
+$dark-gray: #191414;
+::-webkit-scrollbar {
+            width: 10px;
+            border-radius: 8px;
+}
+::-webkit-scrollbar-thumb {
+            background-color: #333;
+            border-radius: 8px;
+}
+@mixin size-weight-li{
+            font-size: 20px;
+            font-weight: 600;
+}
+header{
+// layout 
+position:fixed ; 
+top: 0 ; 
+left: 0 ;
+width: 300px;
+height: 100vh;
+// inside 
+padding:20px ;
+background-color: $black;
+color:$white ;
+
+// logo
+.logo{
+            display: flex;
+            align-items: center;
+            font-weight: 800;
+            font-size: 50px;
+            span{
+            margin-left: 5px;
+            }
+            // @media 
+}
+// pages
+.pages{
+padding-bottom: 30px;
+margin-top: 20px;
+
+li{
+            list-style: none;
+            margin-bottom: 5px;
+            padding:10px 10px ;
+            border-radius: 10px;
+            @include size-weight-li ; 
+            cursor: pointer;
+            transition: .3s;
+            &:hover{
+            background-color: $gray;
+            }
+            span{
+                        margin-left: 10px;
+            }
+}
+
+}     
+// creation
+.creation{
+margin-top: 20px;
+
+            li{
+            list-style: none;
+            padding:00px 10px ;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            @include size-weight-li ; 
+            font-weight: 400;
+            font-size: 19;
+            margin-top: 20px;
+            button{
+            height: 100%;
+            width: 20%;
+            margin-right: 5px;
+            border:none ; 
+            
+            &:first-child{
+                        padding:0 ;
+                        background-color: transparent;
+                        color:$white
+            }
+            }
+            &:last-child{
+                        button{
+                                    background: linear-gradient(45deg, #1DB954, #9C1DB9);
+            
+                        }
+            }
+            }
+}
+
+// long-list
+.long-list{
+            margin-top: 30px;
+            max-height: 300px;
+            overflow: hidden;
+            font-size: 19px;
+            overflow-y: scroll;
+            padding:20px 10px ;
+            ::-webkit-scrollbar {
+                        width: 10px;
+                        border-radius: 8px;
+}
+
+            
+}
+.button{
+            border:2px solid #fff ; 
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            position: absolute;
+            bottom:100px ; 
+            left:20px ;
+            width: 80%;
+            padding:10px 20px;
+            background-color: $black;
+            color:$white ; 
+}
+}
