@@ -24,7 +24,7 @@ $dark-gray: #191414;
 
 
 .container{
-     min-height: calc(100vh - 70px);
+     max-height: calc(100vh - 70px);
      min-width: calc(100vw - 300px);
      position: absolute ; 
      overflow-y: scroll;

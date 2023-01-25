@@ -1,13 +1,11 @@
 import React from 'react'
 import './index.scss'
 import {MdOutlineArrowBackIosNew , MdOutlineArrowForwardIos} from 'react-icons/md' ; 
+import Navigators from '../../component/navigators'
 const index = () => {
   return (
     <div className='Sections'>
-       <div className="buttons">
-          <button><MdOutlineArrowBackIosNew/></button>
-          <button><MdOutlineArrowForwardIos/></button>
-      </div>
+       <Navigators/>
 
       <div className="section-1">
        

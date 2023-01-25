@@ -1,0 +1,27 @@
+$black: #191414;
+$white: #FFFFFF;
+$green: #1DB954;
+$gray: #282828;
+$dark-gray: #191414;
+$gray-hover: #686868;
+
+.buttons{
+            position: absolute;
+            top:20px ; 
+            left: 40px ; 
+            button{
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border:none ; 
+            outline:none ; 
+            background-color: $gray;
+            color:white;
+            margin-right: 20px; 
+            cursor: pointer;
+            transition: .3s;
+            &:hover{
+            background-color: $gray-hover;
+            }
+            }
+}

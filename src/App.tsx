@@ -9,7 +9,7 @@ function App() {
     <Footer/>
     <div className='container'>
       <Home/>
-    </div>
+    </div >
     </>
   )
 }
